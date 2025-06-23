@@ -1,0 +1,15 @@
+<% content_for :title, "Transactions" %>
+
+<h1>Transactions</h1>
+
+<div id="transactions">
+  <% @transactions.each do |transaction| %>
+    <%= link_to transaction, class: 'text-black link-underline link-underline-opacity-0' do %>
+      <%= render transaction %>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="d-grid fixed-bottom p-4">
+  <%= link_to "Log", new_transaction_path, class: "btn btn-primary py-3 rounded-pill shadow fs-6 fw-7"%>
+</div>

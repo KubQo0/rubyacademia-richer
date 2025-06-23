@@ -1,0 +1,7 @@
+<% content_for :title, "New transaction" %>
+
+<h1>New transaction</h1>
+<%= render "shared/link_back", path: transactions_path, text: "Transactions" %>
+<%= render "form", transaction: @transaction %>
+
+<br>
