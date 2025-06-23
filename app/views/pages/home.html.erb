@@ -1,2 +1,8 @@
 <h1>Richer</h1>
 <p>finance tracker</p>
+<% if user_signed_in? %>
+  <%= current_user.given_name %>
+  <%= button_to "logout", logout_path, method: :delete %>
+<% else %>
+  <%= link_to "login", login_path %>
+<% end %>
