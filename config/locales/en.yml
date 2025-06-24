@@ -28,4 +28,60 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      transaction:
+        title: 'Title'
+        kind: 'Kind'
+        amount: 'Amount'
+      transaction/kind:
+        expense: 'Expense'
+        income: 'Income'
+      user:
+        email: 'E-mail'
+        given_name: 'Name'
+        family_name: 'Surname'
+        password: 'Password'
+        password_confirmation: 'Password confirmation'
+  helpers:
+    submit:
+      create: "Create"
+      update: "Update"
+  transactions:
+    index:
+      header: 'Transactions'
+      new_transaction: 'Log Transaction'
+      log: 'Log'
+    new:
+      header: 'Log Transaction'
+      back_link: 'Transactions'
+    edit:
+      header: 'Edit transaction'
+    show:
+      back_link: 'Transactions'
+      edit: 'Edit'
+      destroy: 'Delete'
+  pages:
+    home:
+      welcome: 'Welcome back, %{name}'
+      description: 'Finance tracker'
+  devise:
+    sessions:
+      new:
+        login: 'Login'
+        login_btn: 'Login'
+    registrations:
+      new:
+        registration: 'Registration'
+        register_btn: 'Register'
+    shared:
+      links:
+        register: 'Register instead'
+        login: 'Login instead'
+  shared:
+    navbar:
+      home: 'Home'
+      transactions: 'Transactions'
+      login: 'Log In'
+      register: 'Register'
+      logout: 'Log Out'

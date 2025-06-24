@@ -3,7 +3,7 @@ class TransactionsController < ApplicationController
   before_action :set_transaction, only: %i[ show edit update destroy ]
   # GET /transactions
   def index
-    @transactions = current_user.transaction
+    @transactions = current_user.transactions
   end
 
   # GET /transactions/1
@@ -21,7 +21,7 @@ class TransactionsController < ApplicationController
 
   # POST /transactions
   def create
-    @transaction = current_user.transaction.build(transaction_params)
+    @transaction = current_user.transactions.build(transaction_params)
 
     if @transaction.save
       redirect_to transactions_url, notice: "Transaction was successfully created."

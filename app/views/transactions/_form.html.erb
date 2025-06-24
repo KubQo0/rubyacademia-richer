@@ -18,7 +18,7 @@
 
   <div>
     <%= form.label :kind, class: "form-label" %>
-    <%= form.select :kind, Transaction.kinds.keys.map { |k| [k.titleize, k] }, {}, class: "form-select"%>
+    <%= form.select :kind, Transaction.kinds.keys.map { |k| [Transaction.human_attribute_name("kind.#{k}"), k] }, {}, class: "form-select"%>
   </div>
 
   <div>
