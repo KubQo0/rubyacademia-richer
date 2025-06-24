@@ -47,6 +47,21 @@ en:
     submit:
       create: "Create"
       update: "Update"
+  categories:
+    index:
+      header: 'Categories'
+      new_transaction: 'New category'
+      log: 'New'
+    new:
+      header: 'New category'
+      link_back: 'Categories'
+    edit:
+      link_back: 'Category'
+      header: 'Edit category'
+    show:
+      link_back: 'Categories'
+      edit: 'Edit'
+      destroy: 'Delete'
   transactions:
     index:
       header: 'Transactions'
@@ -54,11 +69,12 @@ en:
       log: 'Log'
     new:
       header: 'Log Transaction'
-      back_link: 'Transactions'
+      link_back: 'Transactions'
     edit:
       header: 'Edit transaction'
+      link_back: 'Transaction'
     show:
-      back_link: 'Transactions'
+      link_back: 'Transactions'
       edit: 'Edit'
       destroy: 'Delete'
   pages:

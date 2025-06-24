@@ -1,5 +1,3 @@
-<% content_for :title, "Transactions" %>
-
 <h1><%= t 'transactions.header' %></h1>
 
 <div id="transactions">
@@ -11,5 +9,5 @@
 </div>
 
 <div class="d-grid fixed-bottom p-4">
-  <%= link_to "Log", new_transaction_path, class: "btn btn-primary py-3 rounded-pill shadow fs-6 fw-7"%>
+  <%= link_to t('.log'), new_transaction_path, class: "btn btn-primary py-3 rounded-pill shadow fs-6 fw-7"%>
 </div>
