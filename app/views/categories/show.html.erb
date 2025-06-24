@@ -1,0 +1,7 @@
+<%= render "shared/link_back", path: categories_path, text: t('.link_back') %>
+<%= render @category %>
+
+<div class="d-flex gap-3 mt-2 justify-content-between text-nowrap flex-wrap">
+  <%= link_to t('.edit'), edit_category_path(@category), class: "btn btn-outline-primary" %>
+  <%= button_to t('.destroy'), @category, method: :delete, class: "btn btn-outline-danger" %>
+</div>

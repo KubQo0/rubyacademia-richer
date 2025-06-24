@@ -26,6 +26,18 @@
     <%= form.number_field :amount, step: 0.01, min: 0, class: "form-control" %>
   </div>
 
+  <div>
+    <%= form.label :category, class: 'form-label' %>
+    <div>
+      <% current_user.categories.each do |c| %>
+        <%= form.radio_button :category_id, c.id, class: 'btn-check' %>
+        <%= form.label "category_id_#{c.id}", class: "btn btn-outline-#{c.color}" do %>
+          <i class="bi bi-<%= c.icon %>"></i>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
   <div class="d-grid">
     <%= form.submit class: "btn btn-primary" %>
   </div>
